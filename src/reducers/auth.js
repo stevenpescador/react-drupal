@@ -5,7 +5,7 @@ import {
   LOGOUT_SUCCESS
 } from '../actions/logout'
 import { loadState } from '../utils/localStorage'
-//localStorage.removeItem('current_user')
+
 const persistedState = loadState()
 
 const INITIAL_STATE = {

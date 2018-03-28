@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Login from './Login'
 import LoadingBar from 'react-redux-loading'
 import Nav from './Nav'
-import Dashboard from './Dashboard'
 import DrupalFormContainer from './drupal/DrupalFormContainer'
 
 class App extends Component {

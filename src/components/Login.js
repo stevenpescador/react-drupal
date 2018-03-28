@@ -17,10 +17,10 @@ class Login extends Component {
   }
   render() {
     const { username, password } = this.state
-    const { basicAuth } = this.props
+    const { isAuthenticated } = this.props
     return (
       <div>
-        {basicAuth !== '' ? (
+        {isAuthenticated ? (
             <p>Already logged in.</p>
           ) : (
             <form className='login-form' onSubmit={this.handleSubmit}>
@@ -48,9 +48,9 @@ class Login extends Component {
   }
 }
 function mapStateToProps({ auth }) {
-  const { basicAuth } = auth
+  const { isAuthenticated } = auth
   return {
-    basicAuth
+    isAuthenticated
   }
 }
 export default connect(mapStateToProps)(Login)
