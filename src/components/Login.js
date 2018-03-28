@@ -18,13 +18,12 @@ class Login extends Component {
   render() {
     const { username, password } = this.state
     const { basicAuth } = this.props
-
     return (
       <div>
         {basicAuth !== '' ? (
             <p>Already logged in.</p>
           ) : (
-            <form className='add-form' onSubmit={this.handleSubmit}>
+            <form className='login-form' onSubmit={this.handleSubmit}>
               <input
                 value={username}
                 onChange={this.handleInputChange}
@@ -43,9 +42,6 @@ class Login extends Component {
                 Submit
               </button>
             </form>
-           /* {errorMessage &&
-            <p>{errorMessage}</p>
-            } */
           )}
       </div>
     )

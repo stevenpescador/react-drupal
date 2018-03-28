@@ -184,18 +184,40 @@ li {
 
 .add-form {
   margin: 0 auto;
-  width: 600px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.add-form select, .add-form input {
+  margin-right: 5px;
+}
+.add-form .btn {
+  margin: 0;
+  padding: 7px;
 }
 
-input {
+input, textarea, select {
   display: block;
   box-sizing: border-box;
   width: 100%;
   outline: none;
   border: none;
   border-radius: 0;
-  appearance: none;
   margin-bottom: 20px;
+  padding: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: lightgray;
+  background-color: white;
+  font-size: 18px;
+}
+input:focus, textarea:focus {
+  border-color: gray;
+}
+
+
+select {
+  width: 100%;
 }
 
 .btn {
@@ -215,15 +237,38 @@ input {
   margin-bottom: 0.25em;
   font-size: 20px;
 }
-
-.input {
-  padding: 5px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: lightgray;
-  background-color: white;
-  font-size: 18px;
+.drupal-form-container {
+  border: solid 1px grey;
+  padding: 20px;
 }
-.input:focus {
-  border-color: gray;
+.drupal-form-container fieldset {
+  border: none;
+  padding: 0;
+}
+.drupal-form-container button[type=submit] {
+  margin: 0;
+}
+.drupal-form-container fieldset > .form-group {
+  margin-bottom: 20px;
+}
+.field-object input {
+  margin: 0;
+}
+.field-object .suggestion-container {
+  position: relative;
+}
+
+.field-object .suggestion-container ul {
+  list-style: none;
+  position: absolute;
+  background: white;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: solid 1px darkgrey;
+}
+
+.field-object .suggestion-container li:hover {
+  background-color: aquamarine;
+  cursor: pointer;
 }
