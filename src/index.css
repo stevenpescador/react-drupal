@@ -35,26 +35,6 @@ a {
   border: 2px solid #00b5d6;
 }
 
-.result {
-  display: flex;
-  justify-content: space-between;
-}
-
-.poll-author {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.poll-author img {
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  margin: 0 10px;
-}
-
 .btn {
   text-transform: uppercase;
   margin: 35px auto;
@@ -107,41 +87,6 @@ li {
   text-decoration: none;
 }
 
-.dashboard-toggle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 22px;
-}
-
-.dashboard-toggle button {
-  border: none;
-  background: transparent;
-  font-size: 22px;
-}
-
-.dashboard-list {
-  font-size: 18px;
-  letter-spacing: .4px;
-}
-
-.dashboard-list a:hover {
-  font-weight: 600;
-}
-
-.add-poll-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.poll-container {
-  width: 60%;
-  margin: 0px auto;
-  display: flex;
-  flex-direction: column;
-}
-
 .question {
   font-size: 30px;
   text-align: center;
@@ -152,34 +97,6 @@ li {
   height: 40px;
   border-radius: 20px;
   margin-top: 10px;
-}
-
-.user {
-  display: flex;
-}
-
-.user h1 {
-  margin: 0;
-  font-size: 30px;
-}
-
-.user img {
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  margin-right: 20px;
-}
-
-.user p {
-  margin-top: 6px;
-  margin-bottom: 6px;
-}
-
-@media (max-width: 500px) {
-  .poll-container {
-    width: 95%;
-    flex-direction: column;
-  }
 }
 
 .add-form {
